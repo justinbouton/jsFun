@@ -165,7 +165,7 @@
 
 
 // ARRAY FOR LET / REDUCE
-const numbers = [1, -1, 2, 3];
+// const numbers = [1, -1, 2, 3];
 
 // // FOR let sum += n
 // // loop through array add sum plus current number
@@ -177,12 +177,88 @@ const numbers = [1, -1, 2, 3];
 // acc = 1, curVal = -1 => a = 0
 // acc = 0, curVal = 2 => a = 2
 // acc = 2, curVal = 3 => a = 5
-const sum = numbers.reduce((acc, curVal) => {
-    return acc + curVal;
-});
+// const sum = numbers.reduce((acc, curVal) => {
+//     return acc + curVal;
+// });
 
-console.log(sum)
+// console.log(sum)
 
+
+
+const companies= [
+  {name: "Company One", category: "Finance", start: 1981, end: 2004},
+  {name: "Company Two", category: "Retail", start: 1992, end: 2008},
+  {name: "Company Three", category: "Auto", start: 1999, end: 2007},
+  {name: "Company Four", category: "Retail", start: 1989, end: 2010},
+  {name: "Company Five", category: "Technology", start: 2009, end: 2014},
+  {name: "Company Six", category: "Finance", start: 1987, end: 2010},
+  {name: "Company Seven", category: "Auto", start: 1986, end: 1996},
+  {name: "Company Eight", category: "Technology", start: 2011, end: 2016},
+  {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
+];
+
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+// // FOR LOOP
+// for (let i = 0; i < companies.length; i++) {
+//     console.log(companies[i]);
+// }
+
+
+// // FOREACH
+// companies.forEach(function(company) {
+//     console.log(company)
+// })
+
+// // forEach ES6
+// const eachCompany = companies.forEach(company => console.log(company))
+
+
+// // FILTER
+// Filter age 21 and over
+// Declare arr who can drink
+// let canDrink = [];
+
+// // loop through all numbers in the age array
+// for (var i = 0; i <= ages.length; i++){
+//     // if age => 21 push to canDrink
+//     if (ages[i] >= 21) {
+//         canDrink.push(ages[i])
+//     }
+// } 
+
+// filter ES6
+// const canDrink = ages.filter(age => age > 21)
+
+// console.log(canDrink);
+
+// // Filter retail companies
+// let retailCompany = [];
+
+// for (var i = 0; i < companies.length; i++){
+//     if (companies[i].category = 'Retail') {
+//         retailCompany.push(companies[i].category)
+//     }
+// }
+
+// filter ES6
+// const retailCompany = companies.filter(company => company.category === 'Retail')
+
+// // filter companies from the 80's ES6
+// const retailCompany = companies.filter(company => (company.start >= 1980 && company.start < 1990))
+
+// // filter companies that lasted at least 10 years ES6
+// const retailCompany = companies.filter(company => (company.end - company.start >= 10))
+
+// console.log(retailCompany);
+
+
+
+// map
+
+// sort
+
+// reduce
 
 
     </script>
