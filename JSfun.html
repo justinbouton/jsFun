@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+    // // reverse a string function
+    // function reverse(str) {
+    //     // store reversed string in var
+    //     var reversed = ''
+    //     // for loop backwards to push into reversed
+    //     for (var i = str.length - 1; i >= 0; i--) {
+    //         reversed += str[i];
+    //     }   
+    //     console.log(reversed);
+    // }
+
+    // reverse("Hello")
+
+
+    // // Add to the begining and end of an array
+    // var myArr = ['b', 'c', 'd'];
+
+    // myArr.push('end');
+    // myArr.unshift('start');
+    
+    // console.log(myArr);
+
+//     function FirstFactorial(num) { 
+
+// // for any num entered multiply it by itself and every number down to 1.
+//   var result = 1;
+//   var count;
+//       for (count = num; count > 1; count--) {
+//           result *= count;
+//       }
+//       console.log(result);
+// }
+ 
+// // keep this function call here 
+// FirstFactorial(8);   
+
+
+
+// // REVERSE STRING
+
+// function FirstReverse(str) { 
+//     var reversed;
+//         // Loop through str with i-- start at end, work backwards
+//         for (var i = str.length - 1; i >= 0; i--) {
+//             reversed += str[i]
+//         }
+//     alert(reversed);       
+//     }
+
+// FirstReverse("test");
+
+
+
+// // RETURN TRUE IF BOOLEAN
+
+// If input bool is string return true else false
+// function boolToWord( bool ){
+//   //If typeOf value of bool is string return yes, else no
+//   isBool = typeof(bool)
+// console.log('ISBOOL ' + isBool)
+
+//   if (isBool === "string") {
+//     console.log(true);
+//   } else {
+//   console.log(false);
+//   }
+// }
+
+// boolToWord()
+
+
+
+// // Simple addition
+
+// function SimpleAdding(num) { 
+//     console.log(num*(num+1)/2)    
+// }
+
+// SimpleAdding(2)
+
+
+
+// // REDUCE
+// var arr = [1,2,3,4];
+
+// // var reduce = function(arr) {
+//     var sum = arr.reduce(function(prevVal, curVal, curIndex, origArr) {
+//         return prevVal + curVal;
+//     });
+// // }
+// console.log(sum)
+
+// // Reduce to a function
+//  function reduce(arr) {
+//     var sum = arr.reduce(function(prevVal, curVal, curIndex, origArr) {
+//         return prevVal + curVal;
+//     });
+// console.log(sum)
+
+// }
+// reduce([1,2,3,4])
+
+
+
+// // DETECT PANGRAM
+
+// function isPangram(string, bool){
+//     charArray = []
+//     // if the string has the letters a-z at least once, return true, else false. Ignore caps, numbers and punctuation.
+//     // Loop through each letter split each char, ignore caps, numbers, punctuation, push to char array.
+//     for (var i = 0; string.length > i; i++){
+//         // split at each character store in char
+//         let char = string.charAt(i);
+
+//         // if matches a-z push to charArray
+//         if (char.match(/[a-z]/i)) {
+//             let charLowerCase = char.toLowerCase();
+//             console.log("char matches [a-z]: " + charLowerCase + " pushed to charArr")
+//             // push to charArray
+//             charArray.push(charLowerCase)
+//         } else {
+//             console.log("No match")
+//         };
+//     } 
+
+//     // Dedup array with Set (Set only allows unique values, auto dedup.)
+
+//     var deDupCharArray = new Set(charArray);
+//     var finalArr = [...deDupCharArray];
+//     var finalArrLength = finalArr.length - 1
+
+//     console.log("finalArr: " + (finalArr.sort()) + " Length: " + finalArrLength);
+
+//     // If charArray === 25 (charaters of the alphabet) return true, else false
+//     if (finalArrLength === 25 | bool === "true") {
+//         console.log("TRUE - isPargram")
+//     } else {
+//         console.log("FALSE");
+//     };
+// };
+
+
+// var string = "Pack my box with five dozen liquor jugs. is  a pangram"
+// isPangram(string);
+
+// var string = "This is not a pangram"
+// isPangram(string);
+
+// var string = "The quick brown fox jumps over the lazy dog."
+// isPangram(string);
+
+
+
+// ARRAY FOR LET / REDUCE
+const numbers = [1, -1, 2, 3];
+
+// // FOR let sum += n
+// // loop through array add sum plus current number
+// let sum = 0;
+// for (let n of numbers)
+//     sum += n;
+
+// // REDUCE, acc + curVal
+// acc = 1, curVal = -1 => a = 0
+// acc = 0, curVal = 2 => a = 2
+// acc = 2, curVal = 3 => a = 5
+const sum = numbers.reduce((acc, curVal) => {
+    return acc + curVal;
+});
+
+console.log(sum)
+
+
+
+    </script>
+    
+</body>
+</html>
