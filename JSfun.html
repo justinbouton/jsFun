@@ -296,10 +296,52 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // console.log(sortedAges);
 
 
+// function findLongest(numArr){
+//   // find the longes number in the array
+//   var maxNum = Math.max(...numArr)
+//   console.log(maxNum);
+// }
+
+// findLongest([1, 7, 62, 850, 2, 3]);
+
+
 
 // // REDUCE
 
 
+
+// // LETTER CHANGES
+// // Loop through entire str, if charAt is a-z or A-Z add one charAt place (C becomes D, z becomes a), capitalize vowles.
+function LetterChanges(str) { 
+  // character array to hold str 
+  let charArr = [];
+  // loop through str
+  for (var i = 0; i < str.length; i++){
+    // split at each character store in charArr
+    let char = str.charAt(i);
+      // if charAt is equal to a-z or A-Z push to changedStr
+      if (char.match(/[b-df-hj-np-tv-z]/)) {
+        // forEach char add one, push to charArr
+console.log("Aplha-char " + char)
+        // charArr.push(char);
+        // vowel capitalize
+      } else if (char.match(/[aeiou]/)) {
+console.log("Lowercase vowel " + char)
+      } else {
+        // else push to changedStr
+console.log("Non-Alpha " + char)
+        // charArr.push(char);
+      };
+  };
+console.log("charArr " + charArr);
+  return str;       
+}
+   
+// keep this function call here 
+LetterChanges("hello*3");                            
+// LetterChanges(readline("hello*3"));                            
+
+  
 
     </script>
     
